@@ -20,13 +20,52 @@
     <link rel="stylesheet" href="/profile/assets/css/owl.css">
     <link rel="stylesheet" href="/profile/assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <!--
 
-TemplateMo 591 villa agency
+    <style>
+        /* Custom CSS for the dropdown */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            list-style: none;
+            font-size: 14px;
+            text-align: left;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            min-width: 160px;
+            /* Reduced width */
+        }
 
-https://templatemo.com/tm-591-villa-agency
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
 
--->
+        .dropdown-menu>li>a {
+            display: block;
+            padding: 8px 20px;
+            /* Reduced padding */
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu>li>a:hover {
+            background-color: #f5f5f5;
+            color: #262626;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -72,18 +111,26 @@ https://templatemo.com/tm-591-villa-agency
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="/profile/index.html" class="logo">
-                            <h1>Villa</h1>
+                        <a href="{{ route('frontend.home') }}" class="logo">
+                            <img src="/profile/assets/images/US-logo.png" alt="">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="/profile/index.html" class="active">Home</a></li>
-                            <li><a href="/profile/properties.html">Properties</a></li>
-                            <li><a href="/profile/property-details.html">Property Details</a></li>
+                            <li><a href="{{ route('frontend.home') }}" class="active">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                    onclick="return false;">Properties <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Residential</a></li>
+                                    <li><a href="#">Commercial</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/profile/property-details.html">Articles</a></li>
+                            <li><a href="/profile/contact.html">About Us</a></li>
                             <li><a href="/profile/contact.html">Contact Us</a></li>
-                            <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                         </ul>
+
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
@@ -98,12 +145,34 @@ https://templatemo.com/tm-591-villa-agency
     @yield('content')
     <footer>
         <div class="container">
-            <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-3">
+                    {{-- <div class="col-lg-2 col-md-3 footer-links"> --}}
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="" class="active">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                    </ul>
+                    {{-- </div><!-- End footer links column--> --}}
+                </div>
+                <div class="col-lg-3">
+                    <h2>Central Office</h2>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Newsletter</h2>
+                    <p>Sign up to our newsletter and stay up to date</p>
+                </div>
+            </div>
+            {{-- <div class="col-lg-8">
                 <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved.
 
                     Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
                     Distribution: <a href="https://themewagon.com">ThemeWagon</a></p>
-            </div>
+            </div> --}}
         </div>
     </footer>
 
@@ -115,6 +184,7 @@ https://templatemo.com/tm-591-villa-agency
     <script src="/profile/assets/js/owl-carousel.js"></script>
     <script src="/profile/assets/js/counter.js"></script>
     <script src="/profile/assets/js/custom.js"></script>
+
 
 </body>
 

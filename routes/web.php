@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [LayoutController::class, 'home'])->name('layout.home');
+Route::get('/', [LayoutController::class, 'home'])->name('frontend.home');
