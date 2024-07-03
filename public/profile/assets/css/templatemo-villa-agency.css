@@ -786,7 +786,7 @@ Banner Style
   margin-bottom: 0px;
 }
 
-.main-banner .owl-dots {
+/* .main-banner .owl-dots {
   position: absolute;
   bottom: 60px;
   left: 20%;
@@ -803,7 +803,7 @@ Banner Style
 
 .main-banner .owl-dots .active {
   background-color: #f35525;
-}
+} */
 
 .main-banner .owl-nav {
   position: absolute;
@@ -1347,7 +1347,7 @@ footer.footer-no-gap {
 }
 
 footer {
-  margin-top: 150px;
+  margin-top: 50px;
   background-color: #C85C20;
   min-height: 427px;
 }
@@ -1413,6 +1413,23 @@ Page Header Style
   text-transform: uppercase;
   color: #fff;
 }
+
+
+
+/*
+---------------------------------------------
+Page About Style
+---------------------------------------------
+*/
+
+.about-us h3 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+
 
 
 /*

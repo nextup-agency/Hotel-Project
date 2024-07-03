@@ -11,4 +11,22 @@ class LayoutController extends Controller
 
         return view('/home');
     }
+
+    public function residences()
+    {
+
+        return view('/residences');
+    }
+
+    public function contact()
+    {
+
+        return view('/contact');
+    }
+
+    public function about()
+    {
+
+        return view('/about');
+    }
 }

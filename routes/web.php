@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LayoutController;
+use App\Http\Controllers\ResidencesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [LayoutController::class, 'home'])->name('frontend.home');
+
+Route::get('/residences', [LayoutController::class, 'residences'])->name('frontend.residences');
+
+Route::get('/contact', [LayoutController::class, 'contact'])->name('frontend.contact');
+
+Route::get('/about', [LayoutController::class, 'about'])->name('frontend.about');

@@ -122,13 +122,13 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                                     onclick="return false;">Properties <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Residential</a></li>
+                                    <li><a href="{{ route('frontend.residences') }}">Residential</a></li>
                                     <li><a href="#">Commercial</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/profile/property-details.html">Articles</a></li>
-                            <li><a href="/profile/contact.html">About Us</a></li>
-                            <li><a href="/profile/contact.html">Contact Us</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="{{ route('frontend.about') }}">About Us</a></li>
+                            <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
                         </ul>
 
                         <a class='menu-trigger'>
@@ -144,35 +144,27 @@
 
     @yield('content')
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-
-                </div>
-                <div class="col-lg-3">
-                    {{-- <div class="col-lg-2 col-md-3 footer-links"> --}}
-                    <h2>About Us</h2>
-                    <ul>
-                        <li><a href="" class="active">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                    </ul>
-                    {{-- </div><!-- End footer links column--> --}}
-                </div>
-                <div class="col-lg-3">
-                    <h2>Central Office</h2>
-                </div>
-                <div class="col-lg-3">
-                    <h2>Newsletter</h2>
-                    <p>Sign up to our newsletter and stay up to date</p>
-                </div>
+        <div class="row">
+            <div class="col-lg-3 mt-5">
+                <img src="/profile/assets/images/US-Logo-Footer.png" alt="">
             </div>
-            {{-- <div class="col-lg-8">
-                <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved.
-
-                    Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                    Distribution: <a href="https://themewagon.com">ThemeWagon</a></p>
-            </div> --}}
+            <div class="col-lg-3">
+                {{-- <div class="col-lg-2 col-md-3 footer-links"> --}}
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+                {{-- </div><!-- End footer links column--> --}}
+            </div>
+            <div class="col-lg-3">
+                <h2>Central Office</h2>
+            </div>
+            <div class="col-lg-3">
+                <h2>Newsletter</h2>
+                <p>Sign up to our newsletter and stay up to date</p>
+            </div>
         </div>
     </footer>
 
