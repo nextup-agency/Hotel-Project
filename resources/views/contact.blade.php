@@ -10,21 +10,57 @@
 
     <div class="section">
         <div class="container">
+            <h3 class="text-center" style="color: #8E4A24; margin-bottom: 100px">CONTACT US</h3>
             <div class="row">
-                <h3 class="text-center" style="color: #8E4A24; margin-bottom: 100px">CONTACT US</h3>
-                <div class="col-lg-2">
-
+                <div class="col-lg-2" style="width: 110px;">
+                    <i class="fa fa-map-marker" style="font-size:69px;color:red"></i>
                 </div>
 
                 <div class="col-lg-6">
-                    <p>Identity Office Location</p>
-                    <p>Harbour Bay Downtown, Jl. Duyung, Sei Jodoh, Kec. Batu Ampar, Kota Batam, Kepulauan Riau 29453</p>
+                    <h3 style="color: #8E4A24; font-weight: 500;">Identity Office Location</h3>
+                    <p style="width: 350px;">Harbour Bay Downtown, Jl. Duyung, Sei Jodoh, Kec. Batu Ampar, Kota Batam,
+                        Kepulauan Riau 29453</p>
                 </div>
 
-                <div class="col-lg-4">
-                    <i class="bi bi-whatsapp">whatsapp</i>
+                <div class="col-lg-5 d-flex justify-content-end">
+                    <a href="#"><i class="fab fa-whatsapp" style="font-size:79px;color:red"></i></a>
                 </div>
 
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-2" style="width: 110px;">
+                    <i class="fa fa-phone" style="font-size:69px;color:red"></i>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 style="color: #8E4A24; font-weight: 500;">Contact Number</h3>
+                    <p style="width: 350px;">0811-7796-999</p>
+                </div>
+
+                <div class="col-lg-5 d-flex justify-content-end">
+                    <a href="#"><i class="fab fa-linkedin" style="font-size:79px;"></i></a>
+                </div>
+
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-2" style="width: 110px;">
+                    <i class="fa fa-envelope" style="font-size:69px;color:red"></i>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 style="color: #8E4A24; font-weight: 500;">Contact Email</h3>
+                    <p style="width: 350px;">info@unionsquarebatam.com</p>
+                </div>
+
+                <div class="col-lg-5 d-flex justify-content-end">
+                    <a href="#"><i class="fab fa-instagram" style="font-size:79px;"></i></a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-12 d-flex justify-content-end">
+                    <a href="#"><i class="fab fa-facebook" style="font-size:79px;"></i></a>
+                </div>
             </div>
         </div>
     </div>
