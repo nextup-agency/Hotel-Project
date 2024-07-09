@@ -27,19 +27,19 @@
 
 
 
-    <div class="featured section" style="margin-bottom: 150px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <a href=""><img src="/profile/assets/images/Rectangle-1.png" alt=""
-                            style="width: 455px; height: 321px;"> </a>
-                    <h2 class="mt-5 ms-3">UNION SQUARE RESIDENCE</h2>
+    <div class="section">
+        <div class="selection">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-6">
+                        <a href="#"><img src="/profile/assets/images/Rectangle-1.png" alt=""></a>
+                        <h3 class="text-center mt-5 mb-5">UNION SQUARE RESIDENCE</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#"><img src="/profile/assets/images/Rectangle-2.png" alt=""></a>
+                        <h3 class="text-center mt-5">UNION SQUARE OFFICE</h3>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="/profile/assets/images/Rectangle-2.png" alt="" style="width: 455px; height: 321px;">
-                    <h2 class="mt-5 ms-5">UNION SQUARE OFFICE</h2>
-                </div>
-
             </div>
         </div>
     </div>

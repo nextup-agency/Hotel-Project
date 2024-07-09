@@ -29,4 +29,16 @@ class LayoutController extends Controller
 
         return view('/about');
     }
+
+    public function articles()
+    {
+
+        return view('/articles');
+    }
+
+    public function articleDetails()
+    {
+
+        return view('/article-details');
+    }
 }

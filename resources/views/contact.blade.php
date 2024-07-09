@@ -1,69 +1,113 @@
 @extends('layout.index')
 @section('content')
+    <style>
+        @media (min-width: 992px) {
+            .custom-width {
+                max-width: 50%;
+            }
+        }
+    </style>
     <div class="contact-us">
         <div class="row">
             <div class="col-lg-12">
-                <img src="/profile/assets/images/FACADE-13-1.png" class="img-fluid" alt="...">
+                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/profile/assets/images/contact-1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/profile/assets/images/Property-3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/profile/assets/images/Property-2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/profile/assets/images/Property-5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/profile/assets/images/Property-6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/profile/assets/images/Property-7.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="section">
         <div class="container">
-            <h3 class="text-center" style="color: #8E4A24; margin-bottom: 100px">CONTACT US</h3>
-            <div class="row">
-                <div class="col-lg-2" style="width: 110px;">
-                    <i class="fa fa-map-marker" style="font-size:69px;color:red"></i>
-                </div>
+            <h3 class="text-center" style="color: #8E4A24; margin-bottom: 100px; font-weight: 600; font-size: 47px;">
+                CONTACT US
+            </h3>
 
-                <div class="col-lg-6">
-                    <h3 style="color: #8E4A24; font-weight: 500;">Identity Office Location</h3>
-                    <p style="width: 350px;">Harbour Bay Downtown, Jl. Duyung, Sei Jodoh, Kec. Batu Ampar, Kota Batam,
-                        Kepulauan Riau 29453</p>
-                </div>
 
-                <div class="col-lg-5 d-flex justify-content-end">
-                    <a href="#"><i class="fab fa-whatsapp" style="font-size:79px;color:red"></i></a>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-1 text-center mb-3 mb-md-0">
+                    <a href="#"><img src="/profile/assets/images/location-pin.svg" alt="Location Icon"
+                            style="width: 69px;"></a>
                 </div>
-
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-2" style="width: 110px;">
-                    <i class="fa fa-phone" style="font-size:69px;color:red"></i>
+                <div class="col-12 col-md-9 mb-3 mb-md-0 ">
+                    <h3 style="color: #8E4A24; font-weight: 500; font-size: 32px;">Identity Office Location</h3>
+                    <p class="custom-width" style="font-weight: 500; font-size: 20px;">
+                        Harbour Bay Downtown, Jl. Duyung, Sei Jodoh, Kec. Batu Ampar, Kota Batam, Kepulauan Riau 29453
+                    </p>
                 </div>
-
-                <div class="col-lg-6">
-                    <h3 style="color: #8E4A24; font-weight: 500;">Contact Number</h3>
-                    <p style="width: 350px;">0811-7796-999</p>
-                </div>
-
-                <div class="col-lg-5 d-flex justify-content-end">
-                    <a href="#"><i class="fab fa-linkedin" style="font-size:79px;"></i></a>
-                </div>
-
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-2" style="width: 110px;">
-                    <i class="fa fa-envelope" style="font-size:69px;color:red"></i>
-                </div>
-
-                <div class="col-lg-6">
-                    <h3 style="color: #8E4A24; font-weight: 500;">Contact Email</h3>
-                    <p style="width: 350px;">info@unionsquarebatam.com</p>
-                </div>
-
-                <div class="col-lg-5 d-flex justify-content-end">
-                    <a href="#"><i class="fab fa-instagram" style="font-size:79px;"></i></a>
+                <div class="col-12 col-md-2 text-center text-md-right mb-3 mb-md-0">
+                    <a href="#" target="_blank"><img src="/profile/assets/images/whatsapp.svg" alt="WhatsApp Icon"
+                            style="width: 69px;"></a>
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-lg-12 d-flex justify-content-end">
-                    <a href="#"><i class="fab fa-facebook" style="font-size:79px;"></i></a>
+            <div class="row align-items-center" style="margin-top: 60px;">
+                <div class="col-12 col-md-1 text-center mb-3 mb-md-0">
+                    <img src="/profile/assets/images/phone-call.svg" alt="Phone Icon" style="width: 69px;">
+                </div>
+                <div class="col-12 col-md-9 mb-3 mb-md-0">
+                    <h3 style="color: #8E4A24; font-weight: 500; font-size: 32px;">Contact Number</h3>
+                    <p style="font-weight: 500; font-size: 20px;">0811-7796-999</p>
+                </div>
+                <div class="col-12 col-md-2 text-center text-md-right">
+                    <a href="#" target="_blank"><img src="/profile/assets/images/linkedin.svg" alt="LinkedIn Icon"
+                            style="width: 69px;"></a>
+                </div>
+            </div>
+
+            <div class="row align-items-center" style="margin-top: 80px;">
+                <div class="col-12 col-md-1 text-center mb-3 mb-md-0">
+                    <img src="/profile/assets/images/email.svg" alt="Email Icon" style="width: 69px;">
+                </div>
+                <div class="col-12 col-md-9 mb-3 mb-md-0">
+                    <h3 style="color: #8E4A24; font-weight: 500; font-size: 32px;">Contact Email</h3>
+                    <p style="font-weight: 500; font-size: 20px;">info@unionsquarebatam.com</p>
+                </div>
+                <div class="col-12 col-md-2 text-center text-md-right">
+                    <a href="#" target="_blank"><img src="/profile/assets/images/instagram.svg" alt="Instagram Icon"
+                            style="width: 69px;"></a>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-12 col-md-10"></div>
+                <div class="col-12 col-md-2 text-center text-md-right">
+                    <a href="#" target="_blank"><img src="/profile/assets/images/facebook.svg" alt="Facebook Icon"
+                            style="width: 69px;"></a>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <div class="section map">
@@ -95,7 +139,7 @@
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <label for="exampleFormControlInput1" class="form-label">Email*</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">

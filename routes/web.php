@@ -26,3 +26,6 @@ Route::get('/residences', [LayoutController::class, 'residences'])->name('fronte
 Route::get('/contact', [LayoutController::class, 'contact'])->name('frontend.contact');
 
 Route::get('/about', [LayoutController::class, 'about'])->name('frontend.about');
+
+Route::get('/articles', [LayoutController::class, 'articles'])->name('frontend.articles');
+Route::get('/article-details', [LayoutController::class, 'articleDetails'])->name('frontend.articleDetails');

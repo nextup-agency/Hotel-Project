@@ -83,27 +83,6 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-    {{-- <div class="sub-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <ul class="info">
-                        <li><i class="fa fa-envelope"></i> info@company.com</li>
-                        <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
         <div class="container">
@@ -126,7 +105,7 @@
                                     <li><a href="#">Commercial</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Articles</a></li>
+                            <li><a href="{{ route('frontend.articles') }}">Articles</a></li>
                             <li><a href="{{ route('frontend.about') }}">About Us</a></li>
                             <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
                         </ul>
@@ -144,28 +123,66 @@
 
     @yield('content')
     <footer>
+        {{-- <div class="container"> --}}
         <div class="row">
-            <div class="col-lg-3 mt-5">
-                <img src="/profile/assets/images/US-Logo-Footer.png" alt="">
+            <div class="col-lg-3 col-md-6 mb-4" style="margin-top: 70px;">
+                <img src="/profile/assets/images/US-Logo-Footer.png" alt="" class="img-fluid">
             </div>
-            <div class="col-lg-3">
-                {{-- <div class="col-lg-2 col-md-3 footer-links"> --}}
-                <h2>About Us</h2>
-                <ul>
-                    <li><a href="" class="active">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                </ul>
-                {{-- </div><!-- End footer links column--> --}}
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-links">
+                    <ul style="margin-top: 100px;">
+                        <li style="margin-bottom: 30px;"><a href="{{ route('frontend.home') }}" class="active"
+                                style="color: #ffffff; font-size:17px; font-weight:500;">Home</a></li>
+                        <li style="margin-bottom: 30px;"><a href="#"
+                                style="color: #ffffff; font-size:17px; font-weight:500;">Properties</a></li>
+                        <li style="margin-bottom: 30px;"><a href="#"
+                                style="color: #ffffff; font-size:17px; font-weight:500;">Articles</a></li>
+                        <li style="margin-bottom: 30px;"><a href="{{ route('frontend.about') }}"
+                                style="color: #ffffff; font-size:17px; font-weight:500;">About Us</a></li>
+                        <li style="margin-bottom: 30px;"><a href="{{ route('frontend.contact') }}"
+                                style="color: #ffffff; font-size:17px; font-weight:500;">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-3">
-                <h2>Central Office</h2>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h2 style="font-size: 20px; margin-bottom: 10px; letter-spacing:2px;">Central Office</h2>
+                <p style="font-size: 15px; font-weight:500; margin-bottom: 10px; letter-spacing:0.5px;">
+                    Harbour Bay Downtown, Jl. Duyung, Sei Jodoh, Kec. Batu Ampar, Kota Batam, Kepulauan Riau 29453
+                </p>
+                <div style="display: flex; align-items: center; margin-bottom:10px;">
+                    <img src="/profile/assets/images/telephone-1.svg" alt=""
+                        style="width: 27px; height: 27px; margin-right: 15px;">
+                    <p class="text-decoration-underline" style="margin-bottom: 0; font-weight:400">0811-7796-999</p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="/profile/assets/images/email-2.svg" alt=""
+                        style="width: 27px; height: 27px; margin-right: 15px;">
+                    <p style="margin-bottom: 0; font-weight:300">info@unionsquarebatam.com</p>
+                </div>
             </div>
-            <div class="col-lg-3">
-                <h2>Newsletter</h2>
-                <p>Sign up to our newsletter and stay up to date</p>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h2 style="font-size: 20px; font-weight:600; letter-spacing: 2px; margin-bottom: 10px;">Newsletter
+                </h2>
+                <p style="font-size: 15px; font-weight:500; letter-spacing:0.5px; margin-bottom:10px">
+                    Sign up to our newsletter and stay up to date
+                </p>
+                <input type="text" class="form-control opacity-25" value="Your Email Address" id="name"
+                    name="name" required>
+                <p style="margin-top: 10px; font-size: 15px; font-weight:400; letter-spacing:0.5px;">Connect with us
+                </p>
+                <div style="display: flex; align-items: center;">
+                    <a href="#" target="_blank"><img src="/profile/assets/images/whatsapp.svg" alt=""
+                            style="width: 30px; height: 30px; margin-right: 15px;"></a>
+                    <a href="#" target="_blank"><img src="/profile/assets/images/facebook.svg" alt=""
+                            style="width: 30px; height: 30px; margin-right: 15px;"></a>
+                    <a href="#" target="_blank"><img src="/profile/assets/images/instagram.svg" alt=""
+                            style="width: 30px; height: 30px; margin-right: 15px;"></a>
+                    <a href="#" target="_blank"><img src="/profile/assets/images/linkedin.svg" alt=""
+                            style="width: 30px; height: 30px; margin-right: 15px;"></a>
+                </div>
             </div>
         </div>
+        {{-- </div> --}}
     </footer>
 
     <!-- Scripts -->
