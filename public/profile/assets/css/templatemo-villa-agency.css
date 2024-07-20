@@ -441,7 +441,7 @@ Header Style
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
-  height: 100px;
+  height: auto;
   line-height: 100px;
 }
 
@@ -737,11 +737,12 @@ Banner Style
 */
 
 .main-banner .item {
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 220px 20% 320px 20%;
   margin-top: 0px;
+  height: 743px;
 }
 
 .main-banner .item-1 {
@@ -1347,7 +1348,6 @@ footer.footer-no-gap {
 }
 
 footer {
-  margin-top: 50px;
   background-color: #C85C20;
   min-height: 427px;
 }

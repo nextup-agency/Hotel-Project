@@ -6,31 +6,124 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 714px;
+            height: 357px;
         }
 
-        .page-about-2 {
-            background-image: url(/profile/assets/images/about-2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 739px;
+        .section-header {
+            font-size: 32px;
+            color: #fff;
+            letter-spacing: 2px;
         }
 
-        .page-about-3 {
-            background-image: url(/profile/assets/images/about-3.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center;
-            height: 800px;
-            width: 837px;
+        /* Start Section box */
+
+        .section-box {
+            background-color: white;
+            padding: 20px;
+            margin-top: 70px;
         }
+
+        .section-box h3 {
+            font-size: 36px;
+            color: #8E4A24;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+
+        .section-box p {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-right: 20px;
+        }
+
+
+        /* End Section box 1 */
+
+        .section-box2 {
+            background-color: white;
+            padding: 20px 20px 20px 20px;
+            margin-top: 70px;
+        }
+
+        .section-box2 h3 {
+            font-size: 36px;
+            color: #8E4A24;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-box2 h5 {
+            font-size: 20px;
+            color: #000;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 60px;
+        }
+
+        .section-box2 p {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-right: 20px;
+        }
+
+        .text-2 {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: 992px) {
+            .page-about {
+                background-image: url(/profile/assets/images/about.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 714px;
+            }
+
+            .section-box {
+                position: absolute;
+                width: 871px;
+                height: 588px;
+            }
+
+            .section-box2 {
+                height: 588px;
+                width: 819px;
+                margin-left: 10px;
+            }
+
+            .gambar-1 {
+                float: right;
+                width: 802px;
+                height: 739px;
+                background-size: cover;
+            }
+
+            .gambar-2 {
+                float: left;
+                width: 862px;
+                height: 739px;
+                background-size: cover
+            }
+
+            .section-about {
+                margin-top: 100px;
+                margin-bottom: 200px;
+            }
     </style>
     <div class="page-about">
-        <div class="container-fluid">
+        <div class="container-header">
             <div class="row">
                 <div class="col">
-                    <h1 class="mt-5 ms-5" style="font-size: 32px; color: #ffffff; letter-spacing:3px;">“WHERE LUXURY LIVING
+                    <h1 class="mt-5 ms-5 section-header">“WHERE LUXURY LIVING
                         <br>
                         REACHES NEW HEIGHTS”
                     </h1>
@@ -48,138 +141,45 @@
         </div>
     </div>
 
-    <div class="section">
-        <div class="container-fluid">
+    <div class="section-about">
+        <div class="container-about">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="box"
-                        style=" height:588px; width:850px; background-color:#ffffff; margin-top:80px; position: absolute;">
-                        <h1 class="text-center"
-                            style="font-size: 36px; padding-top:60px; color:#8E4A24; margin-bottom:60px; font-weight:700; letter-spacing:1.5px;">
-                            WORK LIFE HARMONY</h1>
-                        <p class="text-center" style="color: #000; font-size:20px; margin-bottom:30px; font-weight:500;">
-                            HARBOUR BAY
-                            DOWNTOWN
-                            AREA - BATAM</p>
-                        <p style="font-size: 20px; margin-left:50px; font-weight:500; letter-spacing:1px; width:87%;">
-                            The
-                            Union Square
-                            is an office and condominium twin tower in the heart of Harbour Bay Downtown, steps away
-                            from
-                            world-class hotels, an international ferry terminal, seaside dining, and nightlife
-                            entertainment
-                            district. Each of the 37-floor buildings will peak over all other buildings in the
-                            neighborhood,
-                            providing sweeping views of Batam city and Singapore’s skyline. The Union Square development
-                            is
-                            unlike any other, where work life balance becomes reality. </p>
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="section-box">
+                        <h3 class="text-center">WORK LIFE HARMONY</h3>
+                        <p>The Union Square is an office and condominium twin tower in the heart of Harbour Bay Downtown,
+                            steps away from world-class hotels, an international ferry terminal, seaside dining, and
+                            nightlife entertainment district. Each of the 37-floor buildings will peak over all other
+                            buildings in the neighborhood, providing sweeping views of Batam city and Singapore’s skyline.
+                            The Union Square development is unlike any other, where work life balance becomes reality.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 page-about-2">
-
+                <div class="col-12 col-md-6 ">
+                    <img src="/profile/assets/images/about-2.png" class="gambar-1" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-
-    {{-- <div class="section" style="margin-bottom: 300px;">
-        <div class="container-fluid">
-            <div class="about-us-2"
-                style="background-image: url(/profile/assets/images/about-2.png); height:739px; background-repeat: no-repeat; background-position: right;">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="box" style="width: 859px; height:588px; background-color:#ffffff; margin-top:80px;">
-                            <h1 class="text-center"
-                                style="font-size: 36px; padding-top:60px; color:#8E4A24; margin-bottom:60px; font-weight:700; letter-spacing:1.5px;">
-                                WORK LIFE HARMONY</h1>
-                            <p class="text-center"
-                                style="color: #000; font-size:20px; margin-bottom:30px; letter-spacing:0.5px; font-weight:500;">
-                                HARBOUR BAY
-                                DOWNTOWN
-                                AREA - BATAM</p>
-                            <p style="font-size: 20px; margin-left:50px; font-weight:500; letter-spacing:1px; width:87%;">
-                                The
-                                Union Square
-                                is an office and condominium twin tower in the heart of Harbour Bay Downtown, steps away
-                                from
-                                world-class hotels, an international ferry terminal, seaside dining, and nightlife
-                                entertainment
-                                district. Each of the 37-floor buildings will peak over all other buildings in the
-                                neighborhood,
-                                providing sweeping views of Batam city and Singapore’s skyline. The Union Square development
-                                is
-                                unlike any other, where work life balance becomes reality. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-
-    {{-- <div class="page-about-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="box"
-                        style="width: 819px; height:588px; background-color:#ffffff; margin-left:80%; margin-top:80px;">
-                        <h1 class="text-center"
-                            style="font-size: 36px; padding-top:50px; color:#8E4A24; margin-bottom:20px; font-weight:700; letter-spacing:1.5px;">
-                            LOCATION</h1>
-                        <p class="text-center"
-                            style="color: #000; font-size:20px; margin-bottom:30px; letter-spacing:0.5px; font-weight:500;">
-                            HARBOUR BAY
-                            DOWNTOWN
-                            AREA - BATAM</p>
-                        <p style="font-size: 20px; margin-left:30px; font-weight:500; letter-spacing:1px;">With 3900 sqm
-                            of
-                            retail space at the
-                            lower level, the
-                            selections of
-                            dining, daily necessities and
-                            convenience is just right at your door step. The ease of access such as shopping, lifestyle
-                            and
-                            business all within steps away. For journey beyond Batam City, Harbour Bay Domestic and
-                            International Ferry Terminal can be reached by 2 minutes walking distance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-
     <div class="section">
-        <div class="container">
+        <div class="container-about">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="/profile/assets/images/US-Logo2.jpg" alt="">
+                <div class="col-12 col-md-5">
+                    <img src="/profile/assets/images/about-3.png" class="gambar-2" alt="">
                 </div>
-
-                <div class="col-lg-8">
-                    <h2 class="ms-5 text-danger">Requirement</h2><br><br>
-                    <form action="" method="POST">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name*</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+                <div class="col-12 col-md-7">
+                    <div class="container">
+                        <div class="section-box2">
+                            <h3 class="text-center">LOCATION</h3>
+                            <h5 class="text-center">HARBOUR BAY DOWNTOWN AREA - BATAM</h5>
+                            <p>With 3900 sqm of retail space at the lower level, the selections of dining, daily necessities
+                                and
+                                convenience is just right at your door step. The ease of access such as shopping, lifestyle
+                                and
+                                business all within steps away. For journey beyond Batam City, Harbour Bay Domestic and
+                                International Ferry Terminal can be reached by 2 minutes walking distance.</p>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Phone Number*</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="text-end mt-5">
-                            <button type="submit" class="btn btn-danger">Submit</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
