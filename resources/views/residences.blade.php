@@ -7,6 +7,19 @@
             padding-bottom: 70px;
         }
 
+        .description {
+            padding-top: 120px;
+            background-color: rgb(205, 118, 69, 5%);
+            padding-bottom: 120px;
+        }
+
+        .box-description {
+            background-color: #fff;
+            padding-right: 60px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+
         .text-type {
             font-size: 20px;
             color: #000;
@@ -18,6 +31,26 @@
             padding: 10px 20px;
             color: #fff;
             border-radius: 17px;
+        }
+
+        .text-residence-h3 {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .text-residence-h4 {
+            font-size: 18px;
+            color: rgb(0, 0, 0, 59%);
+            font-weight: 600;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .text-residence-p {
+            font-size: 16px;
+            color: rgb(0, 0, 0, 59%);
         }
     </style>
     <div class="residence">
@@ -63,17 +96,86 @@
         </div>
     </div>
 
-    <div class="section">
-        <div class="container">
+    <div class="description">
+        <div class="container box-description">
             <div class="row">
                 <div class="col-12">
-                    <h3>Description</h3>
+                    <h4 class="text-residence-h4">Description</h4>
+                    <h3 class="text-residence-h3">Project Information</h3>
+                    <p class="text-residence-p">Developer : PT Citra Buana Prakarsa</p>
+                    <p class="text-residence-p">Kontraktor : PT Citra Buana Prakarsa</p>
+                    <p class="text-residence-p">Type : Studio, 1 Bedroom, 2 Bedroom, 3 Bedroom, 3 Bedroom and Office Space
+                    </p>
+                    <p class="text-residence-p">Building : 2 Tower</p>
+                    <p class="text-residence-p">Floor: 37 Lantai</p>
+                    <p class="text-residence-p">Total : 300 unit-an</p>
+                    <p class="text-residence-p">Exp : Desember 2024</p>
+                    <p class="text-residence-p">Address : Nagoya</p>
+                    <p class="text-residence-p">Location : Harbour Bay, Nagoya, Batam, Kepulauan Riau, Indonesia</p>
+                    <p class="text-residence-p">Tenor : 36 month</p>
+                    <h3 class="text-residence-h3">Tipe Unit </h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tipe Unit</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Studio</td>
+                                <td>36-50 m2</td>
+                                <td>Rp 912,912,000</td>
+                            </tr>
+                            <tr>
+                                <td>1 Bedroom</td>
+                                <td>55-78 m2</td>
+                                <td>Rp 1,379,400,000</td>
+                            </tr>
+                            <tr>
+                                <td>2 Bedroom</td>
+                                <td>88-126 m2</td>
+                                <td>Rp 2,401,828,000</td>
+                            </tr>
+                            <tr>
+                                <td>3 Bedroom</td>
+                                <td>140 m2</td>
+                                <td>Rp 4,458,373,975</td>
+                            </tr>
+                            <tr>
+                                <td>4 Bedroom</td>
+                                <td>184 m2</td>
+                                <td>Rp 5,861,163,113</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="text-residence-h3">Deskripsi</h3>
+                    <p class="text-residence-p">Union Square Batam merupakan apartment dengan segmentasi high-end, terlihat
+                        dengan luasan unit sd
+                        184m2, Union Square di sebut juga sebagai menara kembar selain Residences juga Office pada salah
+                        satu Towernya.
+                        Kawasan HarbourBay Downtown telah terbentuk diantaranya integrated Ferry Terminal Harbour Bay, Hotel
+                        Marriot 5star, Hotel Swiss Bell, Zest juga Resto and Bar Seafood yang terkenal di Batam.</p><br>
+                    <p class="text-residence-p">Bangunan terdiri atas 2 tower dengan 37 lantai, yang masing-masing towernya
+                        diperuntukan untuk
+                        Residences dan Ofiice space. Value apartment adalah, Lokasi Integrated Ferry Terminal HarbourBay ,
+                        Pemandangan Laut dan Singapore, Lokasi di pusat kota Nagoya, Batam.</p>
+
+                    <h3 class="text-residence-h3">Cara Pemesanan Union Square</h3>
+                    <P class="text-residence-p">1.Mengetahui value Union Square</P>
+                    <P class="text-residence-p">2. Hubungi 0812-1213-6654</P>
+                    <P class="text-residence-p">3. Melakukan transfer Booking Fee Apartment Rp. 10,000,000 ke</P>
+                    <P class="text-residence-p">No Rek 5363-0191-11</P>
+                    <P class="text-residence-p">an PT. Citra Buana Batam Industri</P>
+                    <P class="text-residence-p">(berita #unit/nama anda)</P>
+                    <P class="text-residence-p">4. Hubungi untuk konfirmasi pembayaran</P>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section residence-1">
+    <div class="residence-1">
         <div class="container-1">
             <div class="row">
                 <div class="col-12">
