@@ -33,14 +33,23 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="col-12">
+                            <div class="col-6">
                                 <h4 class="card-title">Data User</h4>
+
                             </div>
                             <div class="col-12">
                                 <div class="text-end upgrade-btn">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal" data-bs-whatever="@fat">Create Data</button>
                                 </div>
+                            </div>
+                            <div class="col-4">
+                                <form class="position-relative mt-4" action="{{ route('user.index') }}" method="GET">
+                                    <input class="form-control search-chat py-2 ps-5" type="text" name="query"
+                                        placeholder="Search" title="Enter search keyword">
+                                    <i class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"
+                                        type="submit"></i>
+                                </form>
                             </div>
                             @include('dashboard.user.create')
                             @include('dashboard.user.edit')

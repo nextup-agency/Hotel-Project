@@ -8,12 +8,12 @@
 
         .card-title {
             font-size: 27px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .card-text {
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 500;
             color: #000;
         }
 
@@ -44,12 +44,16 @@
 
 
         .card-body .date {
-            font-weight: 400;
+            font-weight: 500;
             margin-top: 30px;
             color: rgb(0, 0, 0, 59%);
         }
 
         @media (min-width: 992px) {
+            .section {
+                margin-top: 100px;
+            }
+
             .gambar-2 {
                 width: 731px;
                 height: 435px;
@@ -79,13 +83,13 @@
                 padding-top: 30px;
                 margin-left: 30px;
                 margin-bottom: 30px;
-                font-weight: 600;
+                font-weight: 700;
             }
 
             .section-box p {
                 font-size: 20px;
                 margin-left: 30px;
-                font-weight: 400;
+                font-weight: 500;
                 color: #000;
             }
 
@@ -158,7 +162,7 @@
                 </div>
             @endforeach
         </div>
-        <div class="col">
+        <div class="col mt-3">
             {{ $articles->links('pagination::bootstrap-5') }}
 
         </div>

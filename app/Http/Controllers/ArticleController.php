@@ -13,8 +13,9 @@ class ArticleController extends Controller
         $query = $request->input('query');
 
         if ($query) {
-            $data_article = Article::where('tittle', 'like', '%' . $query . '%')
+            $data_article = Article::where('title', 'like', '%' . $query . '%')
                 ->orWhere('description', 'like', '%' . $query . '%')
+                ->orWhere('news_source', 'like', '%' . $query . '%')
                 ->orderBy('id', 'desc')
                 ->paginate(5);
         } else {

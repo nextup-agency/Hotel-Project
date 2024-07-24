@@ -23,7 +23,7 @@
         .text-type {
             font-size: 20px;
             color: #000;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .text-type.active {
@@ -54,6 +54,7 @@
         .text-residence-p {
             font-size: 16px;
             color: rgba(0, 0, 0, 0.59);
+            font-weight: 500;
         }
     </style>
     <div class="residence">

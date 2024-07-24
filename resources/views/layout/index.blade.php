@@ -35,13 +35,13 @@
         .footer-links li a {
             font-size: 17px;
             color: #fff;
-            font-weight: 400;
+            font-weight: 700;
             text-align: center;
         }
 
         .central-office h3 {
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 900;
             letter-spacing: 0.5px;
             color: #fff;
             margin-bottom: 10px;
@@ -50,10 +50,10 @@
 
         .central-office p {
             font-size: 15px;
-            font-weight: 400;
+            font-weight: 700;
             margin-bottom: 10px;
-            letter-spacing: 0.5px;
-            max-width: 70%;
+            letter-spacing: 1px;
+            max-width: 80%;
         }
 
         .icon-1 {
@@ -84,7 +84,7 @@
 
         .teks {
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 900;
             color: #fff;
             margin-bottom: 10px;
         }
@@ -210,7 +210,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{ route('frontend.home') }}" class="logo">
-                            <img src="/profile/assets/images/US-logo.png" alt="">
+                            <img src="/profile/assets/images/US-Logo.png" alt="">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -295,7 +295,7 @@
                             @endif
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="button" type="submit">Submit</button>
+                            <button class="button" type="submit" style="font-weight: 700;">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -316,8 +316,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" id="footerDropdownMenu">Properties</a>
                                 <ul class="dropdown-menu" id="footerDropdownList">
-                                    <li><a href="{{ route('frontend.residences') }}">Residences</a></li>
-                                    <li><a href="{{ route('frontend.office') }}">Office</a></li>
+                                    <li style="margin-bottom: 10px;"><a
+                                            href="{{ route('frontend.residences') }}">Residences</a></li>
+                                    <li style="margin-bottom: 10px;"><a href="{{ route('frontend.office') }}">
+                                            Office</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('frontend.articles') }}">Articles</a></li>

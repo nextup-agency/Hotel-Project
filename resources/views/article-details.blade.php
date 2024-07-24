@@ -3,7 +3,7 @@
     <style>
         .text-details h1 {
             font-size: 48px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .text-details p {

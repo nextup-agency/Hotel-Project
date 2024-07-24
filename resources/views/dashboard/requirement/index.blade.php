@@ -37,6 +37,15 @@
                                         data-bs-target="#createModal" data-bs-whatever="@fat">Create Data</button>
                                 </div>
                             </div>
+                            <div class="col-4">
+                                <form class="position-relative mt-4" action="{{ route('requirement.index') }}"
+                                    method="GET">
+                                    <input class="form-control search-chat py-2 ps-5" type="text" name="query"
+                                        placeholder="Search" title="Enter search keyword">
+                                    <i class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"
+                                        type="submit"></i>
+                                </form>
+                            </div>
                             @include('dashboard.requirement.create')
                             @include('dashboard.requirement.edit')
                         </div>
@@ -64,7 +73,6 @@
                                                 <form action="{{ route('requirement.destroy', $requirement->id) }}"
                                                     method="post">
                                                     @csrf
-                                                    @method('DELETE')
                                                     <button type="button" class="btn btn-primary mb-3"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#editModal{{ $requirement->id }}"

@@ -14,6 +14,8 @@ class RequirementController extends Controller
         if ($query) {
             $data_requirement = Requirement::where('name', 'like', '%' . $query . '%')
                 ->orWhere('email', 'like', '%' . $query . '%')
+                ->orWhere('phone_number', 'like', '%' . $query . '%')
+                ->orWhere('message', 'like', '%' . $query . '%')
                 ->orderBy('id', 'desc')
                 ->paginate(5);
         } else {
@@ -54,12 +56,8 @@ class RequirementController extends Controller
     public function destroy($id)
     {
         $requirement = Requirement::find($id);
-        if ($requirement) {
-            $requirement->delete();
-            return redirect()->route('requirement.index')->with('success', 'Data requirement berhasil dihapus');
-        } else {
-            return redirect()->route('requirement.index')->with('error', 'Requirement tidak ditemukan');
-        }
+        $requirement->delete();
+        return redirect()->route('requirement.index')->with('success', 'Data requirement berhasil dihapus');
     }
 
     public function edit($id)

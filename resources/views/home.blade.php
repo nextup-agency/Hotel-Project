@@ -5,19 +5,17 @@
             font-size: 24px;
             color: #fff;
             margin-bottom: 10px;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.5px;
         }
 
         .union h1 {
             font-size: 36px;
             color: #fff;
-            font-weight: 600;
+            font-weight: 900;
             letter-spacing: 0.5px;
 
         }
-
-        .sky {}
 
         .sky h1 {
             margin-top: 30px;
@@ -29,7 +27,8 @@
 
         .sky p {
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 500;
+            color: #000;
         }
     </style>
     <div class="main-banner">
@@ -70,12 +69,12 @@
                     <div class="col-lg-6">
                         <a href="{{ route('frontend.residences') }}"><img src="/profile/assets/images/Rectangle-1.png"
                                 alt=""></a>
-                        <h3 class="text-center mt-5 mb-5">UNION SQUARE RESIDENCE</h3>
+                        <h3 class="text-center mt-4 mb-5" style="font-size: 24px;">UNION SQUARE RESIDENCE</h3>
                     </div>
                     <div class="col-lg-6">
                         <a href="{{ route('frontend.office') }}"><img src="/profile/assets/images/Rectangle-2.png"
                                 alt=""></a>
-                        <h3 class="text-center mt-5">UNION SQUARE OFFICE</h3>
+                        <h3 class="text-center mt-4" style="font-size: 24px;">UNION SQUARE OFFICE</h3>
                     </div>
                 </div>
             </div>

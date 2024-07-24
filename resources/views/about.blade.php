@@ -13,6 +13,7 @@
             font-size: 32px;
             color: #fff;
             letter-spacing: 2px;
+            font-weight: 900;
         }
 
         /* Start Section box */
@@ -26,7 +27,7 @@
         .section-box h3 {
             font-size: 36px;
             color: #8E4A24;
-            font-weight: 700;
+            font-weight: 900;
             letter-spacing: 1px;
             margin-top: 30px;
             margin-bottom: 60px;
@@ -37,6 +38,7 @@
             font-weight: 500;
             letter-spacing: 2px;
             margin-right: 20px;
+            color: #000;
         }
 
 
@@ -51,7 +53,7 @@
         .section-box2 h3 {
             font-size: 36px;
             color: #8E4A24;
-            font-weight: 700;
+            font-weight: 900;
             letter-spacing: 1px;
             margin-top: 30px;
             margin-bottom: 30px;
@@ -70,6 +72,7 @@
             font-weight: 500;
             letter-spacing: 2px;
             margin-right: 20px;
+            color: #000;
         }
 
         .text-2 {

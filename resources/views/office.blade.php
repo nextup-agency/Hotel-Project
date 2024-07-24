@@ -15,7 +15,7 @@
         .text-type {
             font-size: 20px;
             color: #000;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .text-type.active {

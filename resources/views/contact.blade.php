@@ -5,6 +5,10 @@
             .custom-width {
                 max-width: 50%;
             }
+
+            .section {
+                margin-top: 100px;
+            }
         }
     </style>
     <div class="contact-us">
@@ -39,7 +43,7 @@
 
     <div class="section">
         <div class="container">
-            <h3 class="text-center" style="color: #8E4A24; margin-bottom: 100px; font-weight: 600; font-size: 47px;">
+            <h3 class="text-center" style="color: #8E4A24; margin-bottom: 100px; font-weight: 700; font-size: 47px;">
                 CONTACT US
             </h3>
 
@@ -49,8 +53,8 @@
                     <img src="/profile/assets/images/location-pin.svg" alt="Location Icon" style="width: 69px;">
                 </div>
                 <div class="col-12 col-md-9 mb-3 mb-md-0 ">
-                    <h3 style="color: #8E4A24; font-weight: 500; font-size: 32px;">Identity Office Location</h3>
-                    <p class="custom-width" style="font-weight: 500; font-size: 20px;">
+                    <h3 style="color: #8E4A24; font-weight: 700; font-size: 32px;">Identity Office Location</h3>
+                    <p class="custom-width" style="font-weight: 500; font-size: 20px; color:#000;">
                         Harbour Bay Downtown, Jl. Duyung, Sei Jodoh, Kec. Batu Ampar, Kota Batam, Kepulauan Riau 29453
                     </p>
                 </div>
@@ -66,8 +70,8 @@
                     <img src="/profile/assets/images/phone-call.svg" alt="Phone Icon" style="width: 69px;">
                 </div>
                 <div class="col-12 col-md-9 mb-3 mb-md-0">
-                    <h3 style="color: #8E4A24; font-weight: 500; font-size: 32px;">Contact Number</h3>
-                    <p style="font-weight: 500; font-size: 20px;">0811-7796-999</p>
+                    <h3 style="color: #8E4A24; font-weight: 700; font-size: 32px;">Contact Number</h3>
+                    <p style="font-weight: 500; font-size: 20px; color:#000;">0811-7796-999</p>
                 </div>
                 <div class="col-12 col-md-2 text-center text-md-right">
                     <a href="https://www.facebook.com/profile.php?id=100086550535865" target="_blank"><img
@@ -80,8 +84,8 @@
                     <img src="/profile/assets/images/email.svg" alt="Email Icon" style="width: 69px;">
                 </div>
                 <div class="col-12 col-md-9 mb-3 mb-md-0">
-                    <h3 style="color: #8E4A24; font-weight: 500; font-size: 32px;">Contact Email</h3>
-                    <p style="font-weight: 500; font-size: 20px;">info@unionsquarebatam.com</p>
+                    <h3 style="color: #8E4A24; font-weight: 700; font-size: 32px;">Contact Email</h3>
+                    <p style="font-weight: 500; font-size: 20px; color:#000;">info@unionsquarebatam.com</p>
                 </div>
                 <div class="col-12 col-md-2 text-center text-md-right">
                     <a href="https://www.instagram.com/unionsquarebatam?igsh=MWhhaDUzY3lmcWJxOQ==" target="_blank"><img
