@@ -183,6 +183,22 @@
             }
 
         }
+
+        .botman-widget-container {
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .botman-widget-footer {
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+        }
+
+        .botman-chat-container .message-content {
+        background-color: #f0f0f0; /* Ganti warna latar belakang sesuai kebutuhan */
+        padding: 10px;
+        border-radius: 5px;
+    }
     </style>
 
 </head>
@@ -238,7 +254,7 @@
             </div>
         </div>
     </header>
-    <a href="https://wa.me/628117796999?text=Hello,%20I am%20interested%20in%20Union%20Square%20Batam." class="float"
+    <a href="https://wa.me/628117796999?text=Hello,%20I am%20interested%20in%20Union%20Square%20Batam." class="float-contact-whatsapp"
         target="_blank">
         <img src="/profile/assets/images/whatsapp.svg" alt="">
     </a>
@@ -405,5 +421,22 @@
 
 
 </body>
+{{-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css"> --}}
+<script>
+    var botmanWidget = {
+        frameEndpoint: '/botman/chat',
+        chatServer: '/botman',
+        title: 'Chatbot',
+        introMessage: 'Halo! ada yang bisa bantu?<br><br>ketik <strong>halo</strong> untuk memulai chat',
+        placeholderText: 'Type a message...',
+        mainColor: '#00bfff',
+        bubbleBackground: '#ff0000',
+        bubbleAvatarUrl: '',
+        aboutText: '',
+        bubbleEndpoint: ''
+    };
+</script>
+
+<script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
 
 </html>

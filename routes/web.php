@@ -6,6 +6,7 @@ use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RequirementController;
 use App\Http\Controllers\ResidencesController;
+use App\Http\Controllers\TelegramController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -68,3 +69,20 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/requirement/edit/{id}', [RequirementController::class, 'edit'])->name('requirement.edit');
     Route::post('/dashboard/requirement/update/{id}', [RequirementController::class, 'update'])->name('requirement.update');
 });
+
+
+
+Route::match(['get', 'post'], '/botman', [TelegramController::class, 'handle']);
+Route::get('/file/{filename}', function ($filename) {
+    // Path ke file di storage
+    $filePath = storage_path('app/public/' . $filename);
+
+
+    // Periksa apakah file ada
+    if (!file_exists($filePath)) {
+        abort(404);
+    }
+
+    // Kirim file untuk di-download
+    return response()->download($filePath);
+})->name('file.download');
