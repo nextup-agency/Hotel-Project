@@ -28,37 +28,6 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <style>
-        /* Initially hide the dropdown menu */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            border: none;
-            min-width: 1rem;
-            /* Make sure the submenu appears correctly */
-        }
-
-        /* Style the dropdown list items if needed */
-        .dropdown-menu li {
-            list-style: none;
-        }
-
-        /* Optional: Style the dropdown links */
-        .dropdown-menu li a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
-        }
-
-        /* Optional: Hover effect for submenu items */
-        .dropdown-menu li a:hover {
-            background-color: #f0f0f0;
-        }
-
-        /* .footer-links ul {
-            margin-top: 40px;
-        } */
-
         .footer-links li {
             margin-bottom: 30px;
         }
@@ -173,6 +142,17 @@
             margin-top: 16px;
         }
 
+        @media (max-width: 767px) {
+            .dropdown-menu {
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            .dropdown-menu li {
+                text-align: center;
+            }
+        }
+
         @media (min-width: 992px) {
 
             /* Initially hide the dropdown menu */
@@ -237,8 +217,8 @@
                         <ul class="nav">
                             <li><a href="{{ route('frontend.home') }}">Home</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" id="dropdownMenu">Properties</a>
-                                <ul class="dropdown-menu" id="dropdownList">
+                                <a href="#" class="dropdown-toggle" id="headerDropdownMenu">Properties</a>
+                                <ul class="dropdown-menu" id="headerDropdownList">
                                     <li><a href="{{ route('frontend.residences') }}">Residences</a></li>
                                     <li><a href="{{ route('frontend.office') }}">Office</a></li>
                                 </ul>
@@ -334,14 +314,13 @@
                         <ul>
                             <li><a href="{{ route('frontend.home') }}">Home</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" id="dropdownMenu">Dropdown</a>
-                                <ul class="dropdown-menu" id="dropdownList">
-                                    <li><a href="#">Submenu 1</a></li>
-                                    <li><a href="#">Submenu 2</a></li>
-                                    <li><a href="#">Submenu 3</a></li>
+                                <a href="#" class="dropdown-toggle" id="footerDropdownMenu">Properties</a>
+                                <ul class="dropdown-menu" id="footerDropdownList">
+                                    <li><a href="{{ route('frontend.residences') }}">Residences</a></li>
+                                    <li><a href="{{ route('frontend.office') }}">Office</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Articles</a></li>
+                            <li><a href="{{ route('frontend.articles') }}">Articles</a></li>
                             <li><a href="{{ route('frontend.about') }}">About Us</a></li>
                             <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
                         </ul>
@@ -388,18 +367,35 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var dropdownToggle = document.getElementById('dropdownMenu');
-            var dropdownList = document.getElementById('dropdownList');
+            // Handle dropdown for header
+            var headerDropdownToggle = document.getElementById('headerDropdownMenu');
+            var headerDropdownList = document.getElementById('headerDropdownList');
 
-            dropdownToggle.addEventListener('click', function(event) {
+            headerDropdownToggle.addEventListener('click', function(event) {
                 event.preventDefault();
-                dropdownList.style.display = (dropdownList.style.display === 'block') ? 'none' : 'block';
+                headerDropdownList.style.display = (headerDropdownList.style.display === 'block') ? 'none' :
+                    'block';
+            });
+
+            // Handle dropdown for footer
+            var footerDropdownToggle = document.getElementById('footerDropdownMenu');
+            var footerDropdownList = document.getElementById('footerDropdownList');
+
+            footerDropdownToggle.addEventListener('click', function(event) {
+                event.preventDefault();
+                footerDropdownList.style.display = (footerDropdownList.style.display === 'block') ? 'none' :
+                    'block';
             });
 
             // Optional: Close the dropdown if clicked outside
             document.addEventListener('click', function(event) {
-                if (!dropdownToggle.contains(event.target) && !dropdownList.contains(event.target)) {
-                    dropdownList.style.display = 'none';
+                if (!headerDropdownToggle.contains(event.target) && !headerDropdownList.contains(event
+                        .target)) {
+                    headerDropdownList.style.display = 'none';
+                }
+                if (!footerDropdownToggle.contains(event.target) && !footerDropdownList.contains(event
+                        .target)) {
+                    footerDropdownList.style.display = 'none';
                 }
             });
         });

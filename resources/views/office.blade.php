@@ -12,7 +12,6 @@
             padding-bottom: 10px;
         }
 
-
         .text-type {
             font-size: 20px;
             color: #000;
@@ -47,28 +46,18 @@
         </div>
     </div>
 
-
     <div class="section residence-1">
         <div class="container-1">
             <div class="row">
                 <div class="col-12">
-                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
                         <div class="carousel-inner" id="carouselImages">
                             <div class="carousel-item active">
                                 <img src="/profile/assets/images/office/staff-area-1.png" class="d-block w-100"
                                     alt="...">
                             </div>
                         </div>
-                        {{-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button> --}}
                     </div>
                 </div>
             </div>
@@ -86,13 +75,11 @@
         </div>
     </div>
 
-
-
-
     <script>
         const imageMap = {
             'staff-area': {
-                carousel: ['/profile/assets/images/office/staff-area-1.png',
+                carousel: [
+                    '/profile/assets/images/office/staff-area-1.png',
                     '/profile/assets/images/office/staff-area-2.png',
                     '/profile/assets/images/office/staff-area-3.png',
                     '/profile/assets/images/office/staff-area-4.png',
@@ -107,7 +94,7 @@
             },
             'receptionist': {
                 carousel: [
-                    '/profile/assets/images/office/receptionist.png',
+                    '/profile/assets/images/office/receptionist.png'
                 ],
             },
             'meeting-area': {
@@ -123,8 +110,8 @@
                 event.preventDefault();
 
                 // Remove active class from all buttons
-                document.querySelectorAll('.text-type').forEach(button => {
-                    button.classList.remove('active');
+                document.querySelectorAll('.text-type').forEach(btn => {
+                    btn.classList.remove('active');
                 });
 
                 // Add active class to the clicked button
@@ -148,11 +135,18 @@
                         carouselInner.appendChild(div);
                     });
 
-
                     // Reset carousel to the first item
                     $('#carouselExampleAutoplaying').carousel(0);
                 }
             });
+        });
+
+        window.addEventListener('load', function() {
+            // Simulate a click on the button with data-target='staff-area'
+            const defaultButton = document.querySelector('.text-type[data-target="staff-area"]');
+            if (defaultButton) {
+                defaultButton.click();
+            }
         });
     </script>
 @endsection

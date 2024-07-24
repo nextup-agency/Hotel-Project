@@ -2,14 +2,14 @@
 @section('content')
     <style>
         .residence {
-            background-color: rgb(122, 66, 34, 13%);
+            background-color: rgba(122, 66, 34, 0.13);
             padding-top: 50px;
             padding-bottom: 70px;
         }
 
         .description {
             padding-top: 120px;
-            background-color: rgb(205, 118, 69, 5%);
+            background-color: rgba(205, 118, 69, 0.05);
             padding-bottom: 120px;
         }
 
@@ -28,7 +28,10 @@
 
         .text-type.active {
             background-color: #C85C20;
-            padding: 10px 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
             color: #fff;
             border-radius: 17px;
         }
@@ -42,7 +45,7 @@
 
         .text-residence-h4 {
             font-size: 18px;
-            color: rgb(0, 0, 0, 59%);
+            color: rgba(0, 0, 0, 0.59);
             font-weight: 600;
             margin-bottom: 30px;
             margin-top: 30px;
@@ -50,7 +53,7 @@
 
         .text-residence-p {
             font-size: 16px;
-            color: rgb(0, 0, 0, 59%);
+            color: rgba(0, 0, 0, 0.59);
         }
     </style>
     <div class="residence">
@@ -152,18 +155,16 @@
                     </table>
                     <h3 class="text-residence-h3">Deskripsi</h3>
                     <p class="text-residence-p">Union Square Batam merupakan apartment dengan segmentasi high-end, terlihat
-                        dengan luasan unit sd
-                        184m2, Union Square di sebut juga sebagai menara kembar selain Residences juga Office pada salah
-                        satu Towernya.
-                        Kawasan HarbourBay Downtown telah terbentuk diantaranya integrated Ferry Terminal Harbour Bay, Hotel
-                        Marriot 5star, Hotel Swiss Bell, Zest juga Resto and Bar Seafood yang terkenal di Batam.</p><br>
+                        dengan luasan unit sd 184m2, Union Square di sebut juga sebagai menara kembar selain Residences juga
+                        Office pada salah satu Towernya. Kawasan HarbourBay Downtown telah terbentuk diantaranya integrated
+                        Ferry Terminal Harbour Bay, Hotel Marriot 5star, Hotel Swiss Bell, Zest juga Resto and Bar Seafood
+                        yang terkenal di Batam.</p><br>
                     <p class="text-residence-p">Bangunan terdiri atas 2 tower dengan 37 lantai, yang masing-masing towernya
-                        diperuntukan untuk
-                        Residences dan Ofiice space. Value apartment adalah, Lokasi Integrated Ferry Terminal HarbourBay ,
-                        Pemandangan Laut dan Singapore, Lokasi di pusat kota Nagoya, Batam.</p>
+                        diperuntukan untuk Residences dan Ofiice space. Value apartment adalah, Lokasi Integrated Ferry
+                        Terminal HarbourBay , Pemandangan Laut dan Singapore, Lokasi di pusat kota Nagoya, Batam.</p>
 
                     <h3 class="text-residence-h3">Cara Pemesanan Union Square</h3>
-                    <P class="text-residence-p">1.Mengetahui value Union Square</P>
+                    <P class="text-residence-p">1. Mengetahui value Union Square</P>
                     <P class="text-residence-p">2. Hubungi 0812-1213-6654</P>
                     <P class="text-residence-p">3. Melakukan transfer Booking Fee Apartment Rp. 10,000,000 ke</P>
                     <P class="text-residence-p">No Rek 5363-0191-11</P>
@@ -181,21 +182,11 @@
                 <div class="col-12">
                     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner" id="carouselImages">
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="/profile/assets/images/residence/st-type-a.png" class="d-block w-100"
                                     alt="...">
                             </div>
                         </div>
-                        {{-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button> --}}
                     </div>
                 </div>
             </div>
@@ -212,124 +203,126 @@
         </div>
     </div>
 
-
     <script>
-        const imageMap = {
-            'type-a': {
-                carousel: ['/profile/assets/images/residence/st-type-a.png'],
-                static: '/profile/assets/images/residence/type-a.png'
-            },
-            'type-bc': {
-                carousel: [
-                    '/profile/assets/images/residence/st-type-bc-1.png',
-                    '/profile/assets/images/residence/st-type-bc-2.png'
-                ],
-                static: '/profile/assets/images/residence/type-bc.png'
-            },
-            'type-dj': {
-                carousel: [
-                    '/profile/assets/images/residence/br-1.png',
-                    '/profile/assets/images/residence/br-2.png'
-                ],
-                static: '/profile/assets/images/residence/type-dj.png'
-            },
-            'type-ek': {
-                carousel: [
-                    '/profile/assets/images/residence/br-1.png',
-                    '/profile/assets/images/residence/br-2.png'
-                ],
-                static: '/profile/assets/images/residence/type-ek.png'
-            },
-            'type-fl': {
-                carousel: [
-                    '/profile/assets/images/residence/br-1.png',
-                    '/profile/assets/images/residence/br-2.png'
-                ],
-                static: '/profile/assets/images/residence/type-fl.png'
-            },
-            'type-gm': {
-                carousel: [
-                    '/profile/assets/images/residence/2br-1.png',
-                    '/profile/assets/images/residence/2br-2.png',
-                    '/profile/assets/images/residence/2br-3.png'
-                ],
-                static: '/profile/assets/images/residence/type-gm.png'
-            },
-            'type-hn': {
-                carousel: [
-                    '/profile/assets/images/residence/2br-1.png',
-                    '/profile/assets/images/residence/2br-2.png',
-                    '/profile/assets/images/residence/2br-3.png'
-                ],
-                static: '/profile/assets/images/residence/type-hn.png'
-            },
-            'type-io': {
-                carousel: [
-                    '/profile/assets/images/residence/2br-1.png',
-                    '/profile/assets/images/residence/2br-2.png',
-                    '/profile/assets/images/residence/2br-3.png'
-                ],
-                static: '/profile/assets/images/residence/type-io.png'
-            },
-            'type-p': {
-                carousel: [
-                    '/profile/assets/images/residence/3br-1.png',
-                    '/profile/assets/images/residence/3br-2.png',
-                    '/profile/assets/images/residence/3br-3.png'
-                ],
-                static: '/profile/assets/images/residence/type-p.png'
-            },
-            'type-q': {
-                carousel: [
-                    '/profile/assets/images/residence/4br-1.png',
-                    '/profile/assets/images/residence/4br-2.png',
-                    '/profile/assets/images/residence/4br-3.png'
-                ],
-                static: '/profile/assets/images/residence/type-q.png'
-            }
-        };
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselElement = document.getElementById('carouselExampleAutoplaying');
+            const carousel = new bootstrap.Carousel(carouselElement, {
+                interval: 2000, // Ubah menjadi interval yang diinginkan, misalnya 2000ms
+                ride: 'carousel'
+            });
 
-        document.querySelectorAll('.text-type').forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
+            const imageMap = {
+                'type-a': {
+                    carousel: ['/profile/assets/images/residence/st-type-a.png'],
+                    static: '/profile/assets/images/residence/type-a.png'
+                },
+                'type-bc': {
+                    carousel: [
+                        '/profile/assets/images/residence/st-type-bc-1.png',
+                        '/profile/assets/images/residence/st-type-bc-2.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-bc.png'
+                },
+                'type-dj': {
+                    carousel: [
+                        '/profile/assets/images/residence/br-1.png',
+                        '/profile/assets/images/residence/br-2.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-dj.png'
+                },
+                'type-ek': {
+                    carousel: [
+                        '/profile/assets/images/residence/br-1.png',
+                        '/profile/assets/images/residence/br-2.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-ek.png'
+                },
+                'type-fl': {
+                    carousel: [
+                        '/profile/assets/images/residence/br-1.png',
+                        '/profile/assets/images/residence/br-2.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-fl.png'
+                },
+                'type-gm': {
+                    carousel: [
+                        '/profile/assets/images/residence/2br-1.png',
+                        '/profile/assets/images/residence/2br-2.png',
+                        '/profile/assets/images/residence/2br-3.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-gm.png'
+                },
+                'type-hn': {
+                    carousel: [
+                        '/profile/assets/images/residence/2br-1.png',
+                        '/profile/assets/images/residence/2br-2.png',
+                        '/profile/assets/images/residence/2br-3.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-hn.png'
+                },
+                'type-io': {
+                    carousel: [
+                        '/profile/assets/images/residence/2br-1.png',
+                        '/profile/assets/images/residence/2br-2.png',
+                        '/profile/assets/images/residence/2br-3.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-io.png'
+                },
+                'type-p': {
+                    carousel: [
+                        '/profile/assets/images/residence/3br-1.png',
+                        '/profile/assets/images/residence/3br-2.png',
+                        '/profile/assets/images/residence/3br-3.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-p.png'
+                },
+                'type-q': {
+                    carousel: [
+                        '/profile/assets/images/residence/4br-1.png',
+                        '/profile/assets/images/residence/4br-2.png',
+                        '/profile/assets/images/residence/4br-3.png'
+                    ],
+                    static: '/profile/assets/images/residence/type-q.png'
+                }
+            };
 
-                // Remove active class from all buttons
-                document.querySelectorAll('.text-type').forEach(btn => {
-                    btn.classList.remove('active');
-                });
+            document.querySelectorAll('.text-type').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
 
-                // Add active class to the clicked button
-                this.classList.add('active');
-
-                const target = this.getAttribute('data-target');
-                const images = imageMap[target];
-                if (images) {
-                    // Clear current carousel images
-                    const carouselInner = document.getElementById('carouselImages');
-                    carouselInner.innerHTML = '';
-
-                    // Add new images to carousel
-                    images.carousel.forEach((src, index) => {
-                        const div = document.createElement('div');
-                        div.className = 'carousel-item' + (index === 0 ? ' active' : '');
-                        const img = document.createElement('img');
-                        img.src = src;
-                        img.className = 'd-block w-100';
-                        div.appendChild(img);
-                        carouselInner.appendChild(div);
+                    document.querySelectorAll('.text-type').forEach(btn => {
+                        btn.classList.remove('active');
                     });
 
-                    // Update static image
-                    document.getElementById('imageToChange').src = images.static;
+                    this.classList.add('active');
 
-                    // Reset carousel to the first item
-                    $('#carouselExampleAutoplaying').carousel(0);
-                }
+                    const target = this.getAttribute('data-target');
+                    const images = imageMap[target];
+                    if (images) {
+                        const carouselInner = document.getElementById('carouselImages');
+                        carouselInner.innerHTML = '';
+
+                        images.carousel.forEach((src, index) => {
+                            const div = document.createElement('div');
+                            div.className = 'carousel-item' + (index === 0 ? ' active' :
+                                '');
+                            const img = document.createElement('img');
+                            img.src = src;
+                            img.className = 'd-block w-100';
+                            div.appendChild(img);
+                            carouselInner.appendChild(div);
+                        });
+
+                        document.getElementById('imageToChange').src = images.static;
+
+                        // Reset carousel to the first item
+                        const bootstrapCarousel = new bootstrap.Carousel(carouselElement);
+                        bootstrapCarousel.to(0);
+                    }
+                });
             });
-        });
 
-        window.addEventListener('load', function() {
-            // Simulate a click on the button with data-target='type-a'
+            // Auto-select the default button on page load
             const defaultButton = document.querySelector('.text-type[data-target="type-a"]');
             if (defaultButton) {
                 defaultButton.click();
