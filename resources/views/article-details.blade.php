@@ -45,7 +45,7 @@
         {{-- <div class="container-sm"> --}}
         <div class="row">
             <div class="col ms-5 me-4">
-                <img src="{{ Storage::url($article->image) }}" class="images" alt="{{ $article->title }}" />
+                <img src="{{ Storage::url($article->image) }}" class="images" alt="{{ $article->title }}">
                 <p class="text-details-2 lh-base">{{ $article->description }}</p>
             </div>
         </div>

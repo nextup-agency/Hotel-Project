@@ -66,10 +66,9 @@
 
     <div class="section office-2">
         <div class="container-1">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <img src="/profile/assets/images/office/denah-office.png" alt=""
-                        style="width: 598px; height: 979px;">
+            <div class="row">
+                <div class="col">
+                    <img src="/profile/assets/images/office/denah-office.png" alt="">
                 </div>
             </div>
         </div>
